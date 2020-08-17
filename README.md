@@ -6,7 +6,7 @@ Plugin for generating Builder pattern code of Go struct from selected struct cod
 
 # install
 
-Download the jar file to the local
+Download the `GoBuilderGeneratorPlugin-1.0.jar` file to the local
 
 * In the Settings/Preferences dialog ⌘,, select Plugins.
 * On the Plugins page, click The Settings button and then click Install Plugin from Disk.
