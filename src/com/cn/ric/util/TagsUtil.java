@@ -40,7 +40,11 @@ public class TagsUtil {
                     StringBuffer tagBuffer = new StringBuffer();
                     for (int i = 0; i < tagName.length(); i++) {
                         if (Character.isUpperCase(tagName.charAt(i))) {
-                            tagBuffer.append('_');
+                            if (i  == 0) {
+                                tagBuffer.append('_');
+                            } else if (!Character.isUpperCase(tagName.charAt(i-1))) {
+                                tagBuffer.append('_');
+                            }
                         }
                         tagBuffer.append(Character.toLowerCase(tagName.charAt(i)));
                     }

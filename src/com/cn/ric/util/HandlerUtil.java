@@ -30,15 +30,16 @@ public class HandlerUtil {
             strBuilder.append("Update(ctx *gin.Context)");
             strBuilder.append("\n}\n\n");
 
-            strBuilder.append("type New");
+            strBuilder.append("func New");
             strBuilder.append(structName);
             strBuilder.append("Handler() I");
             strBuilder.append(structName);
             strBuilder.append("Handler {\n\t");
             strBuilder.append("return &");
             strBuilder.append(structName);
-            strBuilder.append("Handler {\n\t");
-            strBuilder.append("//todo");
+            strBuilder.append("Handler {\n\t\t");
+            strBuilder.append("//todo\n\t");
+            strBuilder.append("}\n");
             strBuilder.append("\n}\n\n");
 
             strBuilder.append("func (h *");
