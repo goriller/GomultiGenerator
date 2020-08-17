@@ -1,0 +1,67 @@
+<idea-plugin>
+  <id>com.cn.ric.plugin.generators</id>
+  <name>Go Multifunction Generator</name>
+  <version>1.0</version>
+  <vendor email="richenlin@gmail.com" url="https://github.com/gorillazer/GomultiGenerator">gorillazer</vendor>
+
+  <description><![CDATA[
+      Plugin for generating Builder pattern code of Go struct from selected struct code.<br/>
+      How to use:<br/>
+      1. select the struct code<br/>
+      2. shortcut: <br/>
+        Alt + B: create data build
+        Alt + C: create handler func
+        Alt + M: create handler func method
+        Alt + J: create struct tags
+    ]]></description>
+
+  <change-notes><![CDATA[
+      1.0:<br>
+      <em>Support create builder</em>
+      <em>Support create Handler</em>
+      <em>Support create Handler methods.</em>
+      <em>Support create struct tags</em>
+
+    ]]>
+  </change-notes>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="Go.BuilderGenerator" class="com.cn.ric.GoBuilderGeneratorAction"
+            text="Generate Go Builder Pattern Code"
+            description="Generate Builder pattern code for Go">
+      <add-to-group group-id="CodeMenu" anchor="after" relative-to-action="Generate"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="alt B"/>
+    </action>
+    <action id="Go.HandlerGenerator" class="com.cn.ric.GoHandlerGeneratorAction"
+            text="Generate Go Handler Pattern Code"
+            description="Generate Struct Handler function pattern code for Go">
+      <add-to-group group-id="CodeMenu" anchor="after" relative-to-action="Generate"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="alt C"/>
+    </action>
+    <action id="Go.MethodGenerator" class="com.cn.ric.GoMethodGeneratorAction"
+            text="Generate Go method Pattern Code"
+            description="Generate Struct Handler method pattern code for Go">
+      <add-to-group group-id="CodeMenu" anchor="after" relative-to-action="Generate"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="alt M"/>
+    </action>
+    <action id="Go.TagsGenerator" class="com.cn.ric.GoTagsGeneratorAction"
+            text="Generate Go Tags Pattern Code"
+            description="Generate Struct Tags pattern code for Go">
+      <add-to-group group-id="CodeMenu" anchor="after" relative-to-action="Generate"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="alt T"/>
+    </action>
+  </actions>
+
+</idea-plugin>
