@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '0.4.21'
+    id "org.jetbrains.gradle.plugin.idea-ext" version "0.5"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation("com.google.guava:guava:29.0-jre")
+    "com.intellij.openapi"
+    "apache.commons.lang"
+}
+
+apply plugin: 'idea'
+apply plugin: 'org.jetbrains.intellij'
+apply plugin: 'java'
+
+intellij {
+    version 'IC-2020.1' //IntelliJ IDEA dependency; for a full list of IntelliJ IDEA releases please see https://www.jetbrains.com/intellij-repository/releases
+    plugins 'coverage' //Bundled plugin dependencies
+    pluginName 'GoBuilderGeneratorPlugin'
+}
+
+group 'org.jetbrains'
+version '1.0' // Plugin version

@@ -2,6 +2,9 @@ package com.cn.ric.entity;
 
 import java.util.List;
 
+/**
+ * @author richen
+ */
 public class StructGenerateResult {
     public String error;
 

@@ -5,6 +5,9 @@ import com.cn.ric.entity.StructEntity;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @author richen
+ */
 public class BuilderUtil {
 
     public static String generateBuilderPatternCode(List<StructEntity> structEntityList) {
