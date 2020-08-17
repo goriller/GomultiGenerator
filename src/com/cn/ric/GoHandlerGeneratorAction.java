@@ -1,7 +1,7 @@
 package com.cn.ric;
 
 import com.cn.ric.entity.StructGenerateResult;
-import com.cn.ric.util.BuilderUtil;
+import com.cn.ric.util.HandlerUtil;
 import com.cn.ric.util.StructUtil;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
@@ -41,7 +41,7 @@ public class GoHandlerGeneratorAction extends AnAction {
             return;
         }
 
-        final String builderPatternCode = BuilderUtil.generateBuilderPatternCode(structGenerateResult.structEntityList);
+        final String builderPatternCode = HandlerUtil.generateHandlerPatternCode(structGenerateResult.structEntityList);
 
         final int textLength = editor.getDocument().getTextLength();
 
