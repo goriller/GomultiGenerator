@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# GoBuilderGeneratorPlugin
+# GoMuiltGenerator
 
 IntelliJ IDEA / GoLand plugin for generating Builder pattern code of Go struct from selected struct code.
 
@@ -7,7 +6,7 @@ Plugin for generating Builder pattern code of Go struct from selected struct cod
 
 # install
 
-Download the `GoBuilderGeneratorPlugin-1.0.jar` file to the local
+Download the `GoMuiltGenerator.jar` file to the local
 
 * In the Settings/Preferences dialog ⌘,, select Plugins.
 * On the Plugins page, click The Settings button and then click Install Plugin from Disk.
@@ -20,27 +19,3 @@ Download the `GoBuilderGeneratorPlugin-1.0.jar` file to the local
     - Alt + B: create data build ✔️
     - Alt + C: create handler func ✔️
     - Alt + M: create handler func method ✔️
-=======
-# GoBuilderGeneratorPlugin
-
-IntelliJ IDEA / GoLand plugin for generating Builder pattern code of Go struct from selected struct code.
-
-Plugin for generating Builder pattern code of Go struct from selected struct code.<br/>
-
-# install
-
-Download the `GoBuilderGeneratorPlugin-1.0.jar` file to the local
-
-* In the Settings/Preferences dialog ⌘,, select Plugins.
-* On the Plugins page, click The Settings button and then click Install Plugin from Disk.
-* Select the plugin archive file and click OK.
-* Click OK to apply the changes and restart the IDE if prompted.
-
-# How to use
-* select the struct code
-* shortcut:
-    - Alt + B: create data build ✔️
-    - Alt + C: create handler func ✔️
-    - Alt + M: create handler func method ✔️
->>>>>>> a298a8f1dfe8e25965c7f266975055f201c2f6cd
-    - Alt + J: create struct tags"Preferences" ✔️
