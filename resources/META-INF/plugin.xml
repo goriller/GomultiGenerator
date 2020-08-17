@@ -1,5 +1,5 @@
 <idea-plugin>
-    <id>com.cn.ric.plugin.goenerator</id>
+    <id>com.cn.ric.plugin.gomuiltgenerator</id>
     <name>Go Builder Generator</name>
     <version>1.0.0</version>
     <vendor email="richenlin@gmail.com" url="http://git.code.oa.com/linyyyang/GoBuilderGeneratorPlugin.git">richenlin
@@ -12,6 +12,7 @@
       2. shortcut: <br/>
         Alt + B: create data build
         Alt + C: create handler func
+        Alt + M: create handler func method
         Alt + J: create struct tags
     ]]></description>
 
@@ -36,15 +37,21 @@
         </action>
         <action id="Go.HandlerGenerator" class="com.cn.ric.GoHandlerGeneratorAction"
                 text="Generate Go Handler Pattern Code"
-                description="Generate Builder pattern code for Go">
+                description="Generate Struct Handler function pattern code for Go">
             <add-to-group group-id="CodeMenu" anchor="after" relative-to-action="Generate"/>
             <keyboard-shortcut keymap="$default" first-keystroke="alt C"/>
         </action>
+        <action id="Go.MethodGenerator" class="com.cn.ric.GoMethodGeneratorAction"
+                text="Generate Go method Pattern Code"
+                description="Generate Struct Handler method pattern code for Go">
+            <add-to-group group-id="CodeMenu" anchor="after" relative-to-action="Generate"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt M"/>
+        </action>
         <action id="Go.TagsGenerator" class="com.cn.ric.GoTagsGeneratorAction"
                 text="Generate Go Tags Pattern Code"
-                description="Generate Builder pattern code for Go">
+                description="Generate Struct Tags pattern code for Go">
             <add-to-group group-id="CodeMenu" anchor="after" relative-to-action="Generate"/>
-            <keyboard-shortcut keymap="$default" first-keystroke="alt J"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt T"/>
         </action>
     </actions>
 

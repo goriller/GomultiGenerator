@@ -9,4 +9,5 @@ Plugin for generating Builder pattern code of Go struct from selected struct cod
 * shortcut:
     - Alt + B: create data build ✔️
     - Alt + C: create handler func
+    - Alt + M: create handler func method
     - Alt + J: create struct tags

@@ -9,8 +9,7 @@ repositories {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-    implementation("com.google.guava:guava:29.0-jre")
+//    testCompile group: 'junit', name: 'junit', version: '4.12'
     "com.intellij.openapi"
     "apache.commons.lang"
 }
@@ -20,7 +19,7 @@ apply plugin: 'org.jetbrains.intellij'
 apply plugin: 'java'
 
 intellij {
-    version 'IC-2020.1' //IntelliJ IDEA dependency; for a full list of IntelliJ IDEA releases please see https://www.jetbrains.com/intellij-repository/releases
+    version '202.6397.94' //IntelliJ IDEA dependency; for a full list of IntelliJ IDEA releases please see https://www.jetbrains.com/intellij-repository/releases
     plugins 'coverage' //Bundled plugin dependencies
     pluginName 'GoBuilderGeneratorPlugin'
 }
