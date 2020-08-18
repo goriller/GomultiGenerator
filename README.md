@@ -18,6 +18,10 @@ Download the `GoMuiltGenerator.jar` file to the local
 select the struct code:
 
 ## Alt + B: create data build ✔️
+![](https://raw.githubusercontent.com/gorillazer/GomultiGenerator/github/doc/alt%2BB.gif)
 ## Alt + C: create handler func ✔️
+![](https://raw.githubusercontent.com/gorillazer/GomultiGenerator/github/doc/alt%2BC.gif)
 ## Alt + M: create handler func method ✔️
+![](https://raw.githubusercontent.com/gorillazer/GomultiGenerator/github/doc/alt%2BM.gif)
 ## Alt + T: create struct tags ✔️
+![](https://raw.githubusercontent.com/gorillazer/GomultiGenerator/github/doc/alt%2BT.gif)
