@@ -17,10 +17,10 @@ Download the `GoMuiltGenerator.jar` file to the local
 * select the struct code
 * shortcut:
     - Alt + B: create data build ✔️
-    ![](https://git.code.oa.com/linyyyang/GoMuiltGenerator/blob/6a1688eeb2709a7354f1ed83d2f6bf0957b324ac/doc/alt+B.gif)
+    ![](https://git.code.oa.com/linyyyang/GoMuiltGenerator/blob/master/doc/alt+B.gif)
     - Alt + C: create handler func ✔️
-    ![](https://git.code.oa.com/linyyyang/GoMuiltGenerator/blob/6a1688eeb2709a7354f1ed83d2f6bf0957b324ac/doc/alt+C.gif)
+    ![](https://git.code.oa.com/linyyyang/GoMuiltGenerator/blob/master/doc/alt+C.gif)
     - Alt + M: create handler func method ✔️
-    ![](https://git.code.oa.com/linyyyang/GoMuiltGenerator/blob/6a1688eeb2709a7354f1ed83d2f6bf0957b324ac/doc/alt+M.gif)
+    ![](https://git.code.oa.com/linyyyang/GoMuiltGenerator/blob/master/doc/alt+M.gif)
     - Alt + T: create struct tags ✔️
-    ![](https://git.code.oa.com/linyyyang/GoMuiltGenerator/blob/6a1688eeb2709a7354f1ed83d2f6bf0957b324ac/doc/alt+T.gif)
+    ![](https://git.code.oa.com/linyyyang/GoMuiltGenerator/blob/master/doc/alt+T.gif)
