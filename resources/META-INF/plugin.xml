@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>com.cn.ric.plugin.generators</id>
   <name>Go Multifunction Generator</name>
-  <version>1.0</version>
+  <version>1.1</version>
   <vendor email="richenlin@gmail.com" url="https://github.com/gorillazer/GomultiGenerator">gorillazer</vendor>
 
   <description><![CDATA[
