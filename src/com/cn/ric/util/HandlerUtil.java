@@ -23,47 +23,20 @@ public class HandlerUtil {
 
             strBuilder.append("type I");
             strBuilder.append(structName);
-            strBuilder.append("Handler interface {\n\t");
-            strBuilder.append("List(ctx *gin.Context)\n\t");
-            strBuilder.append("Create(ctx *gin.Context)\n\t");
-            strBuilder.append("Delete(ctx *gin.Context)\n\t");
-            strBuilder.append("Update(ctx *gin.Context)");
+            strBuilder.append(" interface {\n\t");
+            strBuilder.append("//todo\n\t");
             strBuilder.append("\n}\n\n");
 
             strBuilder.append("func New");
             strBuilder.append(structName);
-            strBuilder.append("Handler() I");
+            strBuilder.append("() I");
             strBuilder.append(structName);
-            strBuilder.append("Handler {\n\t");
+            strBuilder.append(" {\n\t");
             strBuilder.append("return &");
             strBuilder.append(structName);
-            strBuilder.append("Handler {\n\t\t");
+            strBuilder.append("{\n\t\t");
             strBuilder.append("//todo\n\t");
             strBuilder.append("}\n");
-            strBuilder.append("\n}\n\n");
-
-            strBuilder.append("func (h *");
-            strBuilder.append(structName);
-            strBuilder.append("Handler) List(ctx *gin.Context) {\n\t");
-            strBuilder.append("//todo");
-            strBuilder.append("\n}\n\n");
-
-            strBuilder.append("func (h *");
-            strBuilder.append(structName);
-            strBuilder.append("Handler) Create(ctx *gin.Context) {\n\t");
-            strBuilder.append("//todo");
-            strBuilder.append("\n}\n\n");
-
-            strBuilder.append("func (h *");
-            strBuilder.append(structName);
-            strBuilder.append("Handler) Delete(ctx *gin.Context) {\n\t");
-            strBuilder.append("//todo");
-            strBuilder.append("\n}\n\n");
-
-            strBuilder.append("func (h *");
-            strBuilder.append(structName);
-            strBuilder.append("Handler) Update(ctx *gin.Context) {\n\t");
-            strBuilder.append("//todo");
             strBuilder.append("\n}\n\n");
 
         }
