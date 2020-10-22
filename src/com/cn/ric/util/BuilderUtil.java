@@ -19,7 +19,7 @@ public class BuilderUtil {
 
             strBuilder.append("\n\n// ");
             strBuilder.append(structName);
-            strBuilder.append(" builder pattern code\n");
+            strBuilder.append("Builder\n");
 
             strBuilder.append("type ");
             strBuilder.append(structName);
@@ -29,6 +29,9 @@ public class BuilderUtil {
             strBuilder.append(structName);
             strBuilder.append("\n}\n\n");
 
+            strBuilder.append("// New");
+            strBuilder.append(structName);
+            strBuilder.append("Builder\n");
             strBuilder.append("func New");
             strBuilder.append(structName);
             strBuilder.append("Builder() *");
@@ -49,6 +52,9 @@ public class BuilderUtil {
                 String keyName = entry.getKey();
                 String lowerKeyName = toLowerCase(keyName);
                 String typeName = entry.getValue();
+                strBuilder.append("// ");
+                strBuilder.append(keyName);
+                strBuilder.append("\n");
                 strBuilder.append("func (b *");
                 strBuilder.append(structName);
                 strBuilder.append("Builder) ");
@@ -67,7 +73,8 @@ public class BuilderUtil {
                 strBuilder.append(lowerKeyName);
                 strBuilder.append("\n\treturn b\n}\n\n");
             }
-
+            strBuilder.append("// Build");
+            strBuilder.append("\n");
             strBuilder.append("func (b *");
             strBuilder.append(structName);
             strBuilder.append("Builder) Build() (*");

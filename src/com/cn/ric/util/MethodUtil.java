@@ -12,24 +12,25 @@ import java.util.regex.Pattern;
 public class MethodUtil {
 
     public static String generateMethodPatternCode(String selectedLine, String text) {
-        String[] params = selectedLine.split("\\.");
-        if (params.length != 2){
-            return "";
-        }
-        if (!text.contains(" " + params[0] + " ")){
+        int i = selectedLine.indexOf(".");
+        String func = selectedLine.substring(0, i);
+        String method = selectedLine.substring(i + 1);
+
+        if (!text.contains(" " + func + " ")){
             return "";
         }
 
         String pattern;
-        if (Pattern.matches("\\S+[(].*[)].*", params[1])) {
-            pattern = "func (%s *%s) %s {\n\t\n}";
-        } else if (Pattern.matches("\\S+", params[1])) {
-            pattern = "func (%s *%s) %s() {\n\t\n}";
+        if (Pattern.matches("\\S+[(].*[)].*", method)) {
+            pattern = "// %s \nfunc (%s *%s) %s {\n\t\n}";
+//        } else if (Pattern.matches("\\S", method)) {
+//            pattern = "// %s \nfunc (%s *%s) %s() {\n\t\n}";
         } else {
             return "";
         }
 
-        String firstChar = params[0].substring(0, 1).toLowerCase();
-        return String.format(pattern, firstChar, params[0], params[1]);
+        String firstChar = func.substring(0, 1).toLowerCase();
+        String comment = method.substring(0, method.indexOf("("));
+        return String.format(pattern, comment, firstChar, func, method);
     }
 }

@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>com.cn.ric.plugin.generators</id>
   <name>Go Multifunction Generator</name>
-  <version>1.1</version>
+  <version>1.2</version>
   <vendor email="richenlin@gmail.com" url="https://github.com/gorillazer/GomultiGenerator">gorillazer</vendor>
 
   <description><![CDATA[
@@ -9,18 +9,18 @@
       How to use:<br/>
       1. select the struct code<br/>
       2. shortcut: <br/>
-        Alt + B: create data build
-        Alt + C: create handler func
-        Alt + M: create handler func method
-        Alt + J: create struct tags
+        Alt + B: create data build <br/>
+        Alt + C: create handler func <br/>
+        Alt + M: create handler func method <br/>
+        Alt + J: create struct tags <br/>
     ]]></description>
 
   <change-notes><![CDATA[
-      1.0:<br>
-      <em>Support create builder</em>
-      <em>Support create Handler</em>
-      <em>Support create Handler methods.</em>
-      <em>Support create struct tags</em>
+      1.0:<br/>
+      <em>Support create builder<br/></em>
+      <em>Support create Handler<br/></em>
+      <em>Support create Handler methods.<br/></em>
+      <em>Support create struct tags<br/></em>
 
     ]]>
   </change-notes>

@@ -17,9 +17,9 @@ public class HandlerUtil {
             String structName = structEntity.structName;
             String lowerStructName = toLowerCase(structEntity.structName);
 
-            strBuilder.append("\n\n// ");
+            strBuilder.append("\n\n// I");
             strBuilder.append(structName);
-            strBuilder.append(" handler pattern code\n");
+            strBuilder.append("\n");
 
             strBuilder.append("type I");
             strBuilder.append(structName);
@@ -27,6 +27,9 @@ public class HandlerUtil {
             strBuilder.append("//todo\n\t");
             strBuilder.append("\n}\n\n");
 
+            strBuilder.append("// New");
+            strBuilder.append(structName);
+            strBuilder.append("\n");
             strBuilder.append("func New");
             strBuilder.append(structName);
             strBuilder.append("() I");
